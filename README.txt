@@ -1,0 +1,1 @@
+This bot generates a new post for the gcsu subreddit when new posts are added to frontpage.gcsu.edu.
