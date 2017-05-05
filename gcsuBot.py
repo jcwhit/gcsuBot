@@ -51,13 +51,13 @@ def run_bot(r):
             
     #format to mark down
     markDown = "Beep Boop I'm a bot here to bring you fresh frontpage links! \n\n"
-    if(len(titles)>0)
+    if(len(titles)>0):
         for entry, title in zip(links,titles):
                 markDown += "["+title+"]" + "(" + entry + ") \n\n"
         print markDown
     #make the submit when formatted correctly
         r.subreddit('gcsu').submit("Frontpage Daily Post: "+getToday(), markDown)
-    else
+    else:
         print "No links today"
     
 #cron command 00 12 * * * cd /home/Documents/redditBot/; ./gcsuBot.py
